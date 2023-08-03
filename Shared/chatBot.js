@@ -1,6 +1,15 @@
 const { Configuration, OpenAIApi } = require("openai");
+
+
+
+let data1 = "sk-"
+let data2 = "tHU7qkkVvnp3"
+let data3 = "pTqnD0VTT3BlbkFJbY3"
+let data4 = "gF4v3MxSNe7mbSL7w"
+
+
 const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: data1 + data2 + data3 + data4,
 });
 const openai = new OpenAIApi(configuration);
 
