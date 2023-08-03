@@ -7,7 +7,6 @@ exports.chatbotController = (req, res) => {
     const { input } = req.body;
 
     if (input) {
-        console.log(input);
         chatbot(input).then((reply) => {
             res.json(respReturn(true, false, 'success', reply.content))
         })
